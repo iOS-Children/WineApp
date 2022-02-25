@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		3516E9D4735D155BC036A4DB393966FC /* naveridlogin-sdk-ios */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2C86B7F394788F8E6171908E62DD5DAF /* Build configuration list for PBXAggregateTarget "naveridlogin-sdk-ios" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "naveridlogin-sdk-ios";
+			productName = "naveridlogin-sdk-ios";
+		};
 		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
@@ -15,17 +25,25 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		35C5C409FAB2F369F55298D521A92583 /* Pods-WineApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D17BEC08D191061AEDF88DBE69E96C6 /* Pods-WineApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A4F24A928798DAE7791FEF2A80DC200D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C9D50E19FD13EDE6D0ECD876B2A7DC7A /* Pods-WineApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F63AD28056163E6B2503D7D8668082F /* Pods-WineApp-dummy.m */; };
+		0550E264212F0109D1DE634AC53A6E25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DE4051A6D5D76F27A8E71D0A5962CCAB /* Pods-WineApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 208D3D1596D5264565FCDDBEE3B5CB07 /* Pods-WineApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F69D757C099404342D8B3488990F1761 /* Pods-WineApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BCC5E705C34A09512498F2B85403A70 /* Pods-WineApp-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C94FEA3F3FBDD378EC7221B69781A882 /* PBXContainerItemProxy */ = {
+		00BAED628ED87D8876B65BE75369EAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3516E9D4735D155BC036A4DB393966FC;
+			remoteInfo = "naveridlogin-sdk-ios";
+		};
+		3BFDDD9E304B1684D3DBE0DBD9F2BA0C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,47 +53,79 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		063716F68C7306E88C3DC55B652A14DC /* Pods-WineApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WineApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2F63AD28056163E6B2503D7D8668082F /* Pods-WineApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WineApp-dummy.m"; sourceTree = "<group>"; };
-		38969CEB63DDABCCD9B9BCA88D96A78F /* Pods-WineApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WineApp-Info.plist"; sourceTree = "<group>"; };
-		3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		46967456DE2E9D389791BADE15B71C29 /* Pods-WineApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WineApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C519659C7768AF6C6DBD186BEDED0A1 /* Pods-WineApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WineApp-frameworks.sh"; sourceTree = "<group>"; };
+		0EB50C11478BE272B46FCD2FD7F526AE /* Pods-WineApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WineApp.release.xcconfig"; sourceTree = "<group>"; };
+		208D3D1596D5264565FCDDBEE3B5CB07 /* Pods-WineApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WineApp-umbrella.h"; sourceTree = "<group>"; };
+		24A58821C460CD8C8043AE98A962474E /* naveridlogin-sdk-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "naveridlogin-sdk-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		2799C13DBA66F111737FE136470869E2 /* Pods-WineApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WineApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		3610614C96834E6685C530AD1BB4E3AF /* Pods-WineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WineApp.debug.xcconfig"; sourceTree = "<group>"; };
+		375002941CDBD814DB59BABD689A8AEC /* Pods-WineApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WineApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4841F849ADA8B30BCDA625842D9E1642 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		4BCC5E705C34A09512498F2B85403A70 /* Pods-WineApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WineApp-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		75FFEB6333655D4B204DA45D3508D6ED /* Pods-WineApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WineApp.modulemap"; sourceTree = "<group>"; };
-		7D17BEC08D191061AEDF88DBE69E96C6 /* Pods-WineApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WineApp-umbrella.h"; sourceTree = "<group>"; };
-		7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		90DABD3DC43ADBD9D208E813D23CD372 /* Pods-WineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WineApp.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7D51A85EC1F477D30C1CDB54D0848794 /* Pods-WineApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WineApp-Info.plist"; sourceTree = "<group>"; };
+		9A96A0BC3961B06F2CDD0FE46CD02256 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EFA03505E30CB558517B2C2876DFE13 /* naveridlogin-sdk-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "naveridlogin-sdk-ios.release.xcconfig"; sourceTree = "<group>"; };
 		B22AB36DDD74187A98FE1674D737BEDE /* Pods-WineApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-WineApp"; path = Pods_WineApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F82A45FA82019311483A850E7411B27C /* Pods-WineApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WineApp.release.xcconfig"; sourceTree = "<group>"; };
+		B8C35F10CDFDD52329F6FFD96816F645 /* Pods-WineApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WineApp.modulemap"; sourceTree = "<group>"; };
+		EE5FF11DC74BC3E69E981D4F05B342DC /* NaverThirdPartyLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NaverThirdPartyLogin.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		26AD516A04410AD92D2599CCC12CF576 /* Frameworks */ = {
+		DB9445CFF823C7CF963EF4DC17ACB108 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4F24A928798DAE7791FEF2A80DC200D /* Foundation.framework in Frameworks */,
+				0550E264212F0109D1DE634AC53A6E25 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		112807130DB897D0D8BAD292F2F2B9E8 /* Pods-WineApp */ = {
+		08DC46CE8273A3F7CF391E3EE6A0338D /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				75FFEB6333655D4B204DA45D3508D6ED /* Pods-WineApp.modulemap */,
-				063716F68C7306E88C3DC55B652A14DC /* Pods-WineApp-acknowledgements.markdown */,
-				46967456DE2E9D389791BADE15B71C29 /* Pods-WineApp-acknowledgements.plist */,
-				2F63AD28056163E6B2503D7D8668082F /* Pods-WineApp-dummy.m */,
-				38969CEB63DDABCCD9B9BCA88D96A78F /* Pods-WineApp-Info.plist */,
-				7D17BEC08D191061AEDF88DBE69E96C6 /* Pods-WineApp-umbrella.h */,
-				90DABD3DC43ADBD9D208E813D23CD372 /* Pods-WineApp.debug.xcconfig */,
-				F82A45FA82019311483A850E7411B27C /* Pods-WineApp.release.xcconfig */,
+				46CE2DF93DE883DF0F90DCC93F9F64CB /* Support Files */,
 			);
-			name = "Pods-WineApp";
-			path = "Target Support Files/Pods-WineApp";
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		160A5704491D4456E6ABCF478694C7B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3200E1E68EABBC0F3FFE1CE6F80912FB /* naveridlogin-sdk-ios */,
+				08DC46CE8273A3F7CF391E3EE6A0338D /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3200E1E68EABBC0F3FFE1CE6F80912FB /* naveridlogin-sdk-ios */ = {
+			isa = PBXGroup;
+			children = (
+				550DF9E5A6713863B5EF65BA4CD10395 /* Frameworks */,
+				98E509AC101D9FEF995B0E8A7C8B9028 /* Support Files */,
+			);
+			path = "naveridlogin-sdk-ios";
+			sourceTree = "<group>";
+		};
+		46CE2DF93DE883DF0F90DCC93F9F64CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4841F849ADA8B30BCDA625842D9E1642 /* SwiftLint.debug.xcconfig */,
+				9A96A0BC3961B06F2CDD0FE46CD02256 /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		550DF9E5A6713863B5EF65BA4CD10395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE5FF11DC74BC3E69E981D4F05B342DC /* NaverThirdPartyLogin.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -86,22 +136,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */ = {
+		98E509AC101D9FEF995B0E8A7C8B9028 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */,
-				7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */,
+				24A58821C460CD8C8043AE98A962474E /* naveridlogin-sdk-ios.debug.xcconfig */,
+				9EFA03505E30CB558517B2C2876DFE13 /* naveridlogin-sdk-ios.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
-		965877409E01FB3D85D85E90E6B30185 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D96179D43A67C5D5323B0682D32C133C /* SwiftLint */,
-			);
-			name = Pods;
+			path = "../Target Support Files/naveridlogin-sdk-ios";
 			sourceTree = "<group>";
 		};
 		A9057A623E41495DFB0A0F8E47EBEEEF /* Products */ = {
@@ -112,14 +154,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BAA7AC1D2C661F2F10A4723C2051649A /* Pods-WineApp */ = {
+			isa = PBXGroup;
+			children = (
+				B8C35F10CDFDD52329F6FFD96816F645 /* Pods-WineApp.modulemap */,
+				375002941CDBD814DB59BABD689A8AEC /* Pods-WineApp-acknowledgements.markdown */,
+				2799C13DBA66F111737FE136470869E2 /* Pods-WineApp-acknowledgements.plist */,
+				4BCC5E705C34A09512498F2B85403A70 /* Pods-WineApp-dummy.m */,
+				0C519659C7768AF6C6DBD186BEDED0A1 /* Pods-WineApp-frameworks.sh */,
+				7D51A85EC1F477D30C1CDB54D0848794 /* Pods-WineApp-Info.plist */,
+				208D3D1596D5264565FCDDBEE3B5CB07 /* Pods-WineApp-umbrella.h */,
+				3610614C96834E6685C530AD1BB4E3AF /* Pods-WineApp.debug.xcconfig */,
+				0EB50C11478BE272B46FCD2FD7F526AE /* Pods-WineApp.release.xcconfig */,
+			);
+			name = "Pods-WineApp";
+			path = "Target Support Files/Pods-WineApp";
+			sourceTree = "<group>";
+		};
+		BCCF3B5A7B9C9F850079DBABD55C3DF6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAA7AC1D2C661F2F10A4723C2051649A /* Pods-WineApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				965877409E01FB3D85D85E90E6B30185 /* Pods */,
+				160A5704491D4456E6ABCF478694C7B8 /* Pods */,
 				A9057A623E41495DFB0A0F8E47EBEEEF /* Products */,
-				E35A89F2DDFAB5A2ACD7DFEC96D65174 /* Targets Support Files */,
+				BCCF3B5A7B9C9F850079DBABD55C3DF6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,31 +198,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D96179D43A67C5D5323B0682D32C133C /* SwiftLint */ = {
-			isa = PBXGroup;
-			children = (
-				7FDA596DBE0337ACDFE55A210D54EF26 /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
-		E35A89F2DDFAB5A2ACD7DFEC96D65174 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				112807130DB897D0D8BAD292F2F2B9E8 /* Pods-WineApp */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5FCC7215C91EE83E5A0F1089BBE428C6 /* Headers */ = {
+		7DD395BF9E9C3942F8D5BF222A738588 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35C5C409FAB2F369F55298D521A92583 /* Pods-WineApp-umbrella.h in Headers */,
+				DE4051A6D5D76F27A8E71D0A5962CCAB /* Pods-WineApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,17 +214,18 @@
 /* Begin PBXNativeTarget section */
 		81D53CE566B52F7F4986FD1E1AEFD32A /* Pods-WineApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4616B3C039AEECE3C34A281E91EC81A /* Build configuration list for PBXNativeTarget "Pods-WineApp" */;
+			buildConfigurationList = FD4E7177676FC8CF9B7EF9135187906C /* Build configuration list for PBXNativeTarget "Pods-WineApp" */;
 			buildPhases = (
-				5FCC7215C91EE83E5A0F1089BBE428C6 /* Headers */,
-				62BFF1940637334D9FAFC42E5F149E12 /* Sources */,
-				26AD516A04410AD92D2599CCC12CF576 /* Frameworks */,
-				702789FEF5EDC1DE14AC1075F3F9F916 /* Resources */,
+				7DD395BF9E9C3942F8D5BF222A738588 /* Headers */,
+				A678036B4CA65C763FCCCC9AA94A3398 /* Sources */,
+				DB9445CFF823C7CF963EF4DC17ACB108 /* Frameworks */,
+				A61E729981985D75B454FC1D060A162D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				25AC13A1B13A932CA35BB607554EBF50 /* PBXTargetDependency */,
+				931DC8DF03778FDAC1DC122724386A30 /* PBXTargetDependency */,
+				9A8B8AF5B94FF355EA81822CBB75C2BA /* PBXTargetDependency */,
 			);
 			name = "Pods-WineApp";
 			productName = Pods_WineApp;
@@ -188,7 +239,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1320;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -203,6 +254,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				3516E9D4735D155BC036A4DB393966FC /* naveridlogin-sdk-ios */,
 				81D53CE566B52F7F4986FD1E1AEFD32A /* Pods-WineApp */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
@@ -210,7 +262,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		702789FEF5EDC1DE14AC1075F3F9F916 /* Resources */ = {
+		A61E729981985D75B454FC1D060A162D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,26 +272,86 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		62BFF1940637334D9FAFC42E5F149E12 /* Sources */ = {
+		A678036B4CA65C763FCCCC9AA94A3398 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9D50E19FD13EDE6D0ECD876B2A7DC7A /* Pods-WineApp-dummy.m in Sources */,
+				F69D757C099404342D8B3488990F1761 /* Pods-WineApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		25AC13A1B13A932CA35BB607554EBF50 /* PBXTargetDependency */ = {
+		931DC8DF03778FDAC1DC122724386A30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = C94FEA3F3FBDD378EC7221B69781A882 /* PBXContainerItemProxy */;
+			targetProxy = 3BFDDD9E304B1684D3DBE0DBD9F2BA0C /* PBXContainerItemProxy */;
+		};
+		9A8B8AF5B94FF355EA81822CBB75C2BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "naveridlogin-sdk-ios";
+			target = 3516E9D4735D155BC036A4DB393966FC /* naveridlogin-sdk-ios */;
+			targetProxy = 00BAED628ED87D8876B65BE75369EAB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		3051D2FD63631EC9B880EF323F819463 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EFA03505E30CB558517B2C2876DFE13 /* naveridlogin-sdk-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		569DEA21E29761D7D99568254E3612AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3610614C96834E6685C530AD1BB4E3AF /* Pods-WineApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WineApp/Pods-WineApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WineApp/Pods-WineApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,11 +482,11 @@
 		};
 		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EAB1DA481EDDC005A251D3A5E6BE4CD /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 9A96A0BC3961B06F2CDD0FE46CD02256 /* SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,51 +497,29 @@
 			};
 			name = Release;
 		};
-		BC4973C72CE1A2D3F21450C70430F8B7 /* Release */ = {
+		CC54EA0D2DB66E2586552AF379AD8987 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82A45FA82019311483A850E7411B27C /* Pods-WineApp.release.xcconfig */;
+			baseConfigurationReference = 24A58821C460CD8C8043AE98A962474E /* naveridlogin-sdk-ios.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-WineApp/Pods-WineApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WineApp/Pods-WineApp.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EC0124719FE8EF5FDDD72C26F8A2F57 /* SwiftLint.debug.xcconfig */;
+			baseConfigurationReference = 4841F849ADA8B30BCDA625842D9E1642 /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,9 +529,9 @@
 			};
 			name = Debug;
 		};
-		EE64F7D1805C15F2F222C7ABD32EADDF /* Debug */ = {
+		F23BA0A603361A127EF95374D743962A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90DABD3DC43ADBD9D208E813D23CD372 /* Pods-WineApp.debug.xcconfig */;
+			baseConfigurationReference = 0EB50C11478BE272B46FCD2FD7F526AE /* Pods-WineApp.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -471,14 +561,24 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2C86B7F394788F8E6171908E62DD5DAF /* Build configuration list for PBXAggregateTarget "naveridlogin-sdk-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC54EA0D2DB66E2586552AF379AD8987 /* Debug */,
+				3051D2FD63631EC9B880EF323F819463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -497,11 +597,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4616B3C039AEECE3C34A281E91EC81A /* Build configuration list for PBXNativeTarget "Pods-WineApp" */ = {
+		FD4E7177676FC8CF9B7EF9135187906C /* Build configuration list for PBXNativeTarget "Pods-WineApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EE64F7D1805C15F2F222C7ABD32EADDF /* Debug */,
-				BC4973C72CE1A2D3F21450C70430F8B7 /* Release */,
+				569DEA21E29761D7D99568254E3612AC /* Debug */,
+				F23BA0A603361A127EF95374D743962A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

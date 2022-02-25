@@ -110,6 +110,7 @@
 				CEF29C4927C723EE008A1FAE /* Frameworks */,
 				CEF29C4A27C723EE008A1FAE /* Resources */,
 				CEF29C6327C7262B008A1FAE /* SwiftLint Run Script */,
+				BAE2EAA1A689D2FF8DDF1261 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,8 +150,8 @@
 			);
 			mainGroup = CEF29C4327C723EE008A1FAE;
 			packageReferences = (
-				CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift.git" */,
 			);
 			productRefGroup = CEF29C4D27C723EE008A1FAE /* Products */;
 			projectDirPath = "";
@@ -196,6 +197,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAE2EAA1A689D2FF8DDF1261 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WineApp/Pods-WineApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WineApp/Pods-WineApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WineApp/Pods-WineApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CEF29C6327C7262B008A1FAE /* SwiftLint Run Script */ = {
@@ -449,7 +467,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -457,7 +475,7 @@
 				kind = branch;
 			};
 		};
-		CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+		CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
 			requirement = {
@@ -470,12 +488,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		CE1B488327C72A0A00625A89 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
 			productName = Alamofire;
 		};
 		CE1B488627C72A2C00625A89 /* SwifterSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			package = CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift.git" */;
 			productName = SwifterSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

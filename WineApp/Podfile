@@ -6,6 +6,7 @@ use_frameworks!
 
 target 'WineApp' do
   pod 'SwiftLint'
+  pod 'naveridlogin-sdk-ios'
   # Pods for WineApp
 
 end

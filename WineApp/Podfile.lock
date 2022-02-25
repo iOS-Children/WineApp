@@ -1,16 +1,20 @@
 PODS:
+  - naveridlogin-sdk-ios (4.1.3)
   - SwiftLint (0.46.2)
 
 DEPENDENCIES:
+  - naveridlogin-sdk-ios
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - naveridlogin-sdk-ios
     - SwiftLint
 
 SPEC CHECKSUMS:
+  naveridlogin-sdk-ios: b9d7c20677981177ed994ecb1c8c2b49f223277d
   SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
 
-PODFILE CHECKSUM: f378d646aadb388f67d6d5eb139cb5b37500ef8c
+PODFILE CHECKSUM: 1092f465ded5d42d0c09e07b820263b3f7d7ed6d
 
 COCOAPODS: 1.11.2
