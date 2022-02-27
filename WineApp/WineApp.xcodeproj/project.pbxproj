@@ -11,6 +11,7 @@
 		CE1B488127C7292600625A89 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = CE1B488027C7292600625A89 /* .swiftlint.yml */; };
 		CE1B488427C72A0A00625A89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE1B488327C72A0A00625A89 /* Alamofire */; };
 		CE1B488727C72A2C00625A89 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE1B488627C72A2C00625A89 /* SwifterSwift */; };
+		CEC1070127C8A5EA00E0833B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEC1070027C8A5EA00E0833B /* GoogleService-Info.plist */; };
 		CEF29C5027C723EE008A1FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF29C4F27C723EE008A1FAE /* AppDelegate.swift */; };
 		CEF29C5227C723EE008A1FAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF29C5127C723EE008A1FAE /* SceneDelegate.swift */; };
 		CEF29C5427C723EE008A1FAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF29C5327C723EE008A1FAE /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		1E65C60FE5B348C1AF962B08 /* Pods-WineApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineApp.release.xcconfig"; path = "Target Support Files/Pods-WineApp/Pods-WineApp.release.xcconfig"; sourceTree = "<group>"; };
 		3A95AFAFF5CE2BDD6153EA8C /* Pods-WineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineApp.debug.xcconfig"; path = "Target Support Files/Pods-WineApp/Pods-WineApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1B488027C7292600625A89 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		CEC1070027C8A5EA00E0833B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CEF29C4C27C723EE008A1FAE /* WineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF29C4F27C723EE008A1FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF29C5127C723EE008A1FAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				CEF29C5A27C723F0008A1FAE /* LaunchScreen.storyboard */,
 				CEF29C5D27C723F0008A1FAE /* Info.plist */,
 				CE1B488027C7292600625A89 /* .swiftlint.yml */,
+				CEC1070027C8A5EA00E0833B /* GoogleService-Info.plist */,
 			);
 			path = WineApp;
 			sourceTree = "<group>";
@@ -111,6 +114,7 @@
 				CEF29C4A27C723EE008A1FAE /* Resources */,
 				CEF29C6327C7262B008A1FAE /* SwiftLint Run Script */,
 				BAE2EAA1A689D2FF8DDF1261 /* [CP] Embed Pods Frameworks */,
+				CEC1070227C8A93D00E0833B /* Crashlytics Run Script */,
 			);
 			buildRules = (
 			);
@@ -169,6 +173,7 @@
 			files = (
 				CE1B488127C7292600625A89 /* .swiftlint.yml in Resources */,
 				CEF29C5C27C723F0008A1FAE /* LaunchScreen.storyboard in Resources */,
+				CEC1070127C8A5EA00E0833B /* GoogleService-Info.plist in Resources */,
 				CEF29C5927C723F0008A1FAE /* Assets.xcassets in Resources */,
 				CEF29C5727C723EE008A1FAE /* Main.storyboard in Resources */,
 			);
@@ -215,6 +220,26 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WineApp/Pods-WineApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		CEC1070227C8A93D00E0833B /* Crashlytics Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Crashlytics Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
 		};
 		CEF29C6327C7262B008A1FAE /* SwiftLint Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -393,6 +418,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = R2L74ZCJY3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WineApp/Info.plist;
@@ -423,6 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = R2L74ZCJY3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WineApp/Info.plist;
