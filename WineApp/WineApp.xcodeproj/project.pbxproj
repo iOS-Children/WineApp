@@ -150,8 +150,8 @@
 			);
 			mainGroup = CEF29C4327C723EE008A1FAE;
 			packageReferences = (
-				CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire.git" */,
-				CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift.git" */,
+				CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
 			);
 			productRefGroup = CEF29C4D27C723EE008A1FAE /* Products */;
 			projectDirPath = "";
@@ -401,6 +401,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -430,6 +431,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -467,7 +469,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -475,7 +477,7 @@
 				kind = branch;
 			};
 		};
-		CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift.git" */ = {
+		CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
 			requirement = {
@@ -488,12 +490,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		CE1B488327C72A0A00625A89 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		CE1B488627C72A2C00625A89 /* SwifterSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift.git" */;
+			package = CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
 			productName = SwifterSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
