@@ -7,15 +7,10 @@ use_frameworks!
 target 'WineApp' do
   pod 'SwiftLint'
   pod 'naveridlogin-sdk-ios'
-  # Add the Firebase pod for Google Analytics
+  
+  # Firebase
   pod 'Firebase/Analytics'
-  # Add the pod for Firebase Crashlytics
   pod 'Firebase/Crashlytics'
-  # For Analytics without IDFA collection capability, use this pod instead
-  # pod ‘Firebase/AnalyticsWithoutAdIdSupport’
-
-  # Add the pods for any other Firebase products you want to use in your app
-  # For example, to use Firebase Authentication and Cloud Firestore
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
   # Pods for WineApp
