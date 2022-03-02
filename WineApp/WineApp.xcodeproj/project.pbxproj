@@ -12,6 +12,12 @@
 		CE1B488427C72A0A00625A89 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE1B488327C72A0A00625A89 /* Alamofire */; };
 		CE1B488727C72A2C00625A89 /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE1B488627C72A2C00625A89 /* SwifterSwift */; };
 		CE429A8227CDF17E00709A8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE429A8127CDF17E00709A8C /* GoogleService-Info.plist */; };
+		CE94A02827CF36A800480C3B /* BootLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94A02727CF36A800480C3B /* BootLoader.swift */; };
+		CE94A02B27CF36FC00480C3B /* CleanroomLogger in Frameworks */ = {isa = PBXBuildFile; productRef = CE94A02A27CF36FC00480C3B /* CleanroomLogger */; };
+		CE94A02D27CF372000480C3B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94A02C27CF372000480C3B /* Logger.swift */; };
+		CE94A02F27CF384500480C3B /* LogRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94A02E27CF384500480C3B /* LogRecorder.swift */; };
+		CE94A03127CF386300480C3B /* LoggerEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94A03027CF386300480C3B /* LoggerEnum.swift */; };
+		CE94A03327CF390300480C3B /* LoggerBootModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94A03227CF390300480C3B /* LoggerBootModule.swift */; };
 		CEF29C5027C723EE008A1FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF29C4F27C723EE008A1FAE /* AppDelegate.swift */; };
 		CEF29C5227C723EE008A1FAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF29C5127C723EE008A1FAE /* SceneDelegate.swift */; };
 		CEF29C5427C723EE008A1FAE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF29C5327C723EE008A1FAE /* ViewController.swift */; };
@@ -26,6 +32,11 @@
 		3A95AFAFF5CE2BDD6153EA8C /* Pods-WineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WineApp.debug.xcconfig"; path = "Target Support Files/Pods-WineApp/Pods-WineApp.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1B488027C7292600625A89 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		CE429A8127CDF17E00709A8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE94A02727CF36A800480C3B /* BootLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BootLoader.swift; sourceTree = "<group>"; };
+		CE94A02C27CF372000480C3B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CE94A02E27CF384500480C3B /* LogRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRecorder.swift; sourceTree = "<group>"; };
+		CE94A03027CF386300480C3B /* LoggerEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerEnum.swift; sourceTree = "<group>"; };
+		CE94A03227CF390300480C3B /* LoggerBootModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerBootModule.swift; sourceTree = "<group>"; };
 		CEF29C4C27C723EE008A1FAE /* WineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF29C4F27C723EE008A1FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEF29C5127C723EE008A1FAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +55,7 @@
 				CE1B488727C72A2C00625A89 /* SwifterSwift in Frameworks */,
 				70A6D277AC45C6E7CD34C7C2 /* Pods_WineApp.framework in Frameworks */,
 				CE1B488427C72A0A00625A89 /* Alamofire in Frameworks */,
+				CE94A02B27CF36FC00480C3B /* CleanroomLogger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +79,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CE94A02327CF354500480C3B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CE94A02627CF369600480C3B /* Login */,
+				CE94A02527CF369000480C3B /* Boot */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		CE94A02427CF356300480C3B /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CE94A02C27CF372000480C3B /* Logger.swift */,
+				CE94A02E27CF384500480C3B /* LogRecorder.swift */,
+				CE94A03027CF386300480C3B /* LoggerEnum.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CE94A02527CF369000480C3B /* Boot */ = {
+			isa = PBXGroup;
+			children = (
+				CE94A02727CF36A800480C3B /* BootLoader.swift */,
+				CE94A03227CF390300480C3B /* LoggerBootModule.swift */,
+			);
+			path = Boot;
+			sourceTree = "<group>";
+		};
+		CE94A02627CF369600480C3B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		CEF29C4327C723EE008A1FAE = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +135,8 @@
 		CEF29C4E27C723EE008A1FAE /* WineApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE94A02427CF356300480C3B /* Logger */,
+				CE94A02327CF354500480C3B /* Module */,
 				CEF29C4F27C723EE008A1FAE /* AppDelegate.swift */,
 				CEF29C5127C723EE008A1FAE /* SceneDelegate.swift */,
 				CEF29C5327C723EE008A1FAE /* ViewController.swift */,
@@ -124,6 +173,7 @@
 			packageProductDependencies = (
 				CE1B488327C72A0A00625A89 /* Alamofire */,
 				CE1B488627C72A2C00625A89 /* SwifterSwift */,
+				CE94A02A27CF36FC00480C3B /* CleanroomLogger */,
 			);
 			productName = WineApp;
 			productReference = CEF29C4C27C723EE008A1FAE /* WineApp.app */;
@@ -156,6 +206,7 @@
 			packageReferences = (
 				CE1B488227C72A0A00625A89 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				CE94A02927CF36FC00480C3B /* XCRemoteSwiftPackageReference "CleanroomLogger" */,
 			);
 			productRefGroup = CEF29C4D27C723EE008A1FAE /* Products */;
 			projectDirPath = "";
@@ -264,8 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE94A02D27CF372000480C3B /* Logger.swift in Sources */,
+				CE94A03127CF386300480C3B /* LoggerEnum.swift in Sources */,
 				CEF29C5427C723EE008A1FAE /* ViewController.swift in Sources */,
+				CE94A03327CF390300480C3B /* LoggerBootModule.swift in Sources */,
+				CE94A02F27CF384500480C3B /* LogRecorder.swift in Sources */,
 				CEF29C5027C723EE008A1FAE /* AppDelegate.swift in Sources */,
+				CE94A02827CF36A800480C3B /* BootLoader.swift in Sources */,
 				CEF29C5227C723EE008A1FAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -510,6 +566,14 @@
 				kind = branch;
 			};
 		};
+		CE94A02927CF36FC00480C3B /* XCRemoteSwiftPackageReference "CleanroomLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emaloney/CleanroomLogger.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -522,6 +586,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CE1B488527C72A2C00625A89 /* XCRemoteSwiftPackageReference "SwifterSwift" */;
 			productName = SwifterSwift;
+		};
+		CE94A02A27CF36FC00480C3B /* CleanroomLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE94A02927CF36FC00480C3B /* XCRemoteSwiftPackageReference "CleanroomLogger" */;
+			productName = CleanroomLogger;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
