@@ -13,7 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // 앱 기동시 세팅되야 하는 기능들에 대해서 BootLoader라는 구조체를 활용해서 세팅해줌
+        BootLoader.runBootLoaderModules(application: application, launchOptions: launchOptions)
+        
+        // Firebase Setting(Boot)
         FirebaseApp.configure()
+        
         return true
     }
 
